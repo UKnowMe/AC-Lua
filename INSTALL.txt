@@ -1,0 +1,33 @@
+Install Linux
+==============
+== Dependencies:
+build-essential
+liblua5.1-0-dev
+libluajit-5.1-dev
+liblualib50-dev
+libreadline-dev
+libncurses5-dev
+ncurses-base
+libpthread-stubs0-dev
+libenet7
+
+  http://wiki.cubers.net/action/view/Compiling_a_server
+  wget -Ozlib.tar.gz http://zlib.net/zlib-1.2.8.tar.gz
+  tar -zxvf zlib.tar.gz
+  cd zlib-1.2.8/
+
+== Compile:
+Run 'build.sh' or
+cd AC-Lua/lua/ && make linux && cd .. && make linux
+server binary will be in AC-Lua/linux_release/ as linux_64_server
+
+
+
+Install Windows
+================
+== Dependencies:
+Lua5.1
+???
+
+== Compile:
+Run 'build.bat' ?
