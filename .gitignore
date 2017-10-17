@@ -3,6 +3,8 @@ server_out/
 *.lo
 *.la
 /enet/.libs/
+/enet/.deps
+/enet/autom4te.cache
 /enet/config.log
 /enet/config.status
 /enet/libtool
@@ -14,4 +16,3 @@ server_out/
 /lib/lua51.dll
 /lib/liblua.a
 /linux_release/
-
