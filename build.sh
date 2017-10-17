@@ -1,3 +1,4 @@
+./build-clean.sh
 cd enet
 ./configure
 make
