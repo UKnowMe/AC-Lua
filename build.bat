@@ -1,7 +1,10 @@
 @echo off
 where /q mingw32-make
 IF ERRORLEVEL 1 (
-    ECHO mingw32-make was not found on your system. Aborting.
+    ECHO ERROR: mingw32-make was not found on your system!
+    ECHO Please download and install MinGW and GCC from: mingw.org OR codeblocks.org
+    ECHO Then add MinGW to your system PATH before running this file.
+    ECHO Aborting.
     EXIT /B
 )
 

@@ -3726,7 +3726,7 @@ void process(ENetPacket *packet, int sender, int chan)
                         strncpy(vi->text,text,128);
                         filtertext(text, text);
                         trimtrailingwhitespace(text);
-                        if(strlen(text) > 3 && !strstr(text, "   ")) vi->action = new kickaction(cn2boot, text);
+                        if(strlen(text) > 3 && !strstr(text, "   ")) vi->action = new banaction(cn2boot, text);
                         vi->boot = 1;
                         break;
                     }

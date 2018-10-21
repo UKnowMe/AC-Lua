@@ -8,5 +8,6 @@ make clean
 rm ../lib/liblua.a
 cd ../lanes
 make clean
+rm -r src/lua
 cd ..
 rm -rf linux_release

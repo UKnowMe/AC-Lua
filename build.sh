@@ -1,5 +1,7 @@
 ./build-clean.sh
-cd enet
+cd lanes/src
+ln -sf ../../lua/src lua
+cd ../../enet
 ./configure
 make
 cd ../lua
