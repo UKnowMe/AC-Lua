@@ -1,4 +1,6 @@
-apt-get install -y       \
+#!/bin/bash
+sudo apt update -y
+sudo apt install -y      \
   build-essential        \
   libpthread-stubs0-dev  \
   libluajit-5.1-dev      \
@@ -7,6 +9,7 @@ apt-get install -y       \
   libncurses5-dev        \
   ncurses-base           \
   libenet7               \
+  zlib1g-dev             \
   zlib1g                 \
   clang                  \
   llvm                   \
