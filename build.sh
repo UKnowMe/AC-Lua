@@ -11,3 +11,7 @@ make linux install
 cp src/liblua.a ../lib/
 cd ..
 $ConcurProc make -j $NumProc linux
+mkdir bin_unix
+mv linux_release/*server bin_unix
+chmod +x bin_unix/*
+echo "[---- Building Done! ----]"

@@ -7,8 +7,8 @@ Check or run install-dependencies.sh
 
 == Compile:
 Run 'build.sh'
-then
-server binary will be located in 'linux_release' as 'linux_64_server'
+then if there re no errors,
+the server binary will be located in 'bin_unix' as 'lua_64_server' or 'lua_server'
 
 
 
