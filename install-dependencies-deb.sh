@@ -8,7 +8,7 @@ sudo apt install -y      \
   libreadline-dev        \
   libncurses5-dev        \
   ncurses-base           \
-  libenet7               \
+  libenet-dev            \
   zlib1g-dev             \
   zlib1g                 \
   clang                  \
