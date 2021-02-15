@@ -55,7 +55,7 @@ static inline T min(T a, T b)
     return a < b ? a : b;
 }
 
-static inline float round(float x) { return floor(x + 0.5f); }
+inline int iabs(int n) { return labs(n); }
 
 #define clamp(a,b,c) (max(b, min(a, c)))
 #define rnd(x) ((int)(randomMT()&0xFFFFFF)%(x))
@@ -164,7 +164,7 @@ inline bool issimilar (char s, char d)
 inline bool validmapname(char *s)
 {
     if(strlen(s) > MAXMAPNAMELEN) return false;
-    while(*s != '\0') 
+    while(*s != '\0')
     {
         if(!isalnum(*s) && *s != '_' && *s != '-' && *s != '.') return false;
         ++s;

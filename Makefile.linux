@@ -4,7 +4,7 @@ OBJECT_FLAGS = -O2 -Wall
 DSTDIR = linux_release
 SRCDIR = src
 INCLUDES = -Ienet/include
-LIBS = -Wl,-Bstatic -Lenet/.libs -lenet -Wl,-Bdynamic -lz -Llua/src -llua5.1 -ldl -lpthread
+LIBS = -Wl,-Bstatic -Lenet/.libs -lenet -Wl,-Bdynamic -lz -Llua/src -llua -ldl -lpthread
 LANES_SRCDIR = lanes/src
 LANES_DEFINES = -D_GNU_SOURCE -DNDEBUG
 LANES_OBJECT_FLAGS = $(OBJECT_FLAGS)
@@ -13,9 +13,9 @@ LANES_INCLUDES = -Isrc/lua
 
 MACHINE := $(shell uname -m)
 ifeq ($(MACHINE), x86_64)
-	TARGET = $(DSTDIR)/linux_64_server
+	TARGET = $(DSTDIR)/lua_64_server
 else
-	TARGET = $(DSTDIR)/linux_server
+	TARGET = $(DSTDIR)/lua_server
 endif
 
 OBJECTS = $(DSTDIR)/crypto.o \

@@ -1,0 +1,30 @@
+Install Linux
+==============
+== Dependencies:
+Check or run install-dependencies.sh
+
+  http://wiki.cubers.net/action/view/Compiling_a_server
+
+== Compile:
+Run 'build.sh'
+then if there re no errors,
+the server binary will be located in 'bin_unix' as 'lua_64_server' or 'lua_server'
+
+
+
+Install Windows
+================
+== Dependencies:
+MinGW
+GCC
+
+Install CodeBlocks(https://codeblocks.org/) to automatically install both MinGW and GCC
+
+== Setup:
+Then set path to MinGW:
+https://stackoverflow.com/questions/5733220/how-do-i-add-the-mingw-bin-directory-to-my-system-path
+https://www.youtube.com/watch?v=vN2RZfkrqKc
+
+== Compile:
+Run 'build.bat'
+server binary will be located in 'server_out' as 'ac_server'
